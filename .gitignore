@@ -1,0 +1,4 @@
+# Ignorar archivos y carpetas
+node_modules
+.DS_Store
+*.log
