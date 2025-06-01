@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
 // Define your routes here
-router.use('/autor', require('./api/autor.routes'));
+router.use('/autores', require('./api/autores.routes'));
 
 module.exports = router;

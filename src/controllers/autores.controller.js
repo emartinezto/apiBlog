@@ -1,9 +1,9 @@
-const Autor =  require('../models/autor.model');
+const Autores =  require('../models/autores.model');
 
 
 const getAll = async (req, res) => {
     // Implement your logic here
-    const autores = await Autor.selectAll();
+    const autores = await Autores.selectAll();
     res.json(autores);
 }
 
