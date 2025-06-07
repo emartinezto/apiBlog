@@ -1,6 +1,6 @@
 #  Rutas API en Express (/api/...)
 
-📁 Autores (/api/autores)
+📁 Autores (/api/autores) > ok
     - GET > /api/autores → Listar todos los autores
         > metodo: GET
         > URL:  /api/autores
@@ -8,10 +8,10 @@
         > body: XXXX
         > Response: Un array con todos los restaurantes
 
-    - GET > /api/autores/:id → Obtener un autor por ID
+    - GET > /api/autores/:id → Obtener un autor por ID > ok
         > metodo: GET
         > URL:  /api/autores/<id>
-            * Hay que validar que el id sea un numero - midelware
+            * Hay que validar que el id sea un numero - middelware
         > Headers: XXXX
         > body: nombre, email, img
         > Response: El objeto del nuevo autor creado.
@@ -31,7 +31,6 @@
     - GET > /api/post → Listar todos los posts con los datos del autor incluidos (JOIN)
     - GET > /api/post/:id → Obtener un post por ID (también con los datos del autor)
     - POST > /api/post → Crear un nuevo post
-    - GET > /api/post/category/:category → (opcional) Listar posts por categoría
 
 
     *** Documentar las funciones

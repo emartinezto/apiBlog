@@ -3,7 +3,7 @@
 GET {{host}}/api/autores
 
 ###
-GET {{host}}/api/autores/3
+GET {{host}}/api/autores/erdf
 
 ###
 POST {{host}}/api/autores/
