@@ -10,16 +10,28 @@ POST {{host}}/api/autores/
 Content-Type: application/json
 
 {
-    "nombre": "Jesus2",
-    "email": "jmartinez2@gmail.com",
-    "img": "jmartinez2.jpg"
+    "nombre": "Jesus5",
+    "email": "jmartinez5@gmail.com",
+    "img": "jmartinez5.jpg"
 }
 
 ###
-GET {{host}}/api/autores/6/posts
+GET {{host}}/api/autores/1/posts
 
 ###
 GET {{host}}/api/post
 
 ###
 GET {{host}}/api/post/1
+
+###
+###
+POST {{host}}/api/post
+Content-Type: application/json
+
+{
+  "titulo": "Nuevo post desde API REST",
+  "descripcion": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "categoria": "Noticias",
+  "autores_id": 1
+}

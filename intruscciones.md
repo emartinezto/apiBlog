@@ -53,6 +53,12 @@
         > Error Response: 404 + Mensaje
 
     - POST > /api/post → Crear un nuevo post
+        > metodo: POST
+        > URL:  /api/post
+            * Hay que validar que los campos que vengan en el body esten todos y sean correctos
+        > Headers: XXXX
+        > body: titulo, descripcion, categoria, autores_id
+        > Response: El objeto del nuevo post creado.
 
 
     *** Documentar las funciones

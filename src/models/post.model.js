@@ -39,8 +39,19 @@ const selectByID = async (postId) => {
     return result[0];
 };
 
+// crear un post nuevo
+const createPost = async ({ titulo, descripcion, categoria, autores_id }) => {
+    const [result] = await db.query(`
+        INSERT INTO post (titulo, descripcion, fecha_creacion, categoria, autores_id) 
+        VALUES (?, ?, NOW(), ?, ?)`, 
+        [titulo, descripcion, categoria, autores_id]
+    );
+    return result;
+};
+
 module.exports = { 
     selectAll,
-    selectByID
+    selectByID,
+    createPost
 }
 

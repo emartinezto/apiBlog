@@ -9,7 +9,14 @@ const getByID = async (req, res) => {
     res.json(req.post);
 }
 
+const createPost = async (req, res) => {
+    const result = await Post.createPost(req.body);
+    const newPost = await Post.selectByID(result.insertId);
+    res.json(newPost);
+}
+
 module.exports = { 
     getAll,
-    getByID
+    getByID,
+    createPost
 }
