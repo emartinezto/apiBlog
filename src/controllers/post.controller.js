@@ -5,6 +5,11 @@ const getAll = async (req, res) => {
     res.json(posts);
 }
 
+const getByID = async (req, res) => {
+    res.json(req.post);
+}
+
 module.exports = { 
-    getAll 
+    getAll,
+    getByID
 }

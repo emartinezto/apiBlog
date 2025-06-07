@@ -13,8 +13,8 @@
         > URL:  /api/autores/<id>
             * Hay que validar que el id sea un numero - middelware
         > Headers: XXXX
-        > body: nombre, email, img
-        > Response: El objeto del nuevo autor creado.
+        > body: XXX
+        > Response: El objeto del autor.
         > Error Response: 404 + Mensaje
 
     - POST > /api/autores → Crear un autor nuevo
@@ -22,8 +22,8 @@
         > URL:  /api/autores
             * Hay que validar que los campos que vengan en el body esten todos y sean correctos
         > Headers: XXXX
-        > body: XXXX
-        > Response: Un objeto con la informacion del autor
+        > body: nombre, email, img
+        > Response: El objeto del nuevo autor creado.
 
     - GET > /api/autores/:id/posts → Obtener todos los posts escritos por ese autor
         > metodo: GET
@@ -44,6 +44,14 @@
         > Response: Un objeto con todos los post y datos del autor
         
     - GET > /api/post/:id → Obtener un post por ID (también con los datos del autor)
+        > metodo: GET
+        > URL:  /api/post/<id>
+            * Hay que validar que el id sea un numero - middelware
+        > Headers: XXXX
+        > body: XXX
+        > Response: El objeto del post.
+        > Error Response: 404 + Mensaje
+
     - POST > /api/post → Crear un nuevo post
 
 

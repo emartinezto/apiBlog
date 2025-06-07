@@ -19,5 +19,7 @@ Content-Type: application/json
 GET {{host}}/api/autores/6/posts
 
 ###
-
 GET {{host}}/api/post
+
+###
+GET {{host}}/api/post/1
