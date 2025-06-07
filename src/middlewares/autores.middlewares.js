@@ -40,7 +40,22 @@ const validateAuthorBody = (req, res, next) => {
     next();
 };
 
+const checkAuthorHasPosts = async (req, res, next) => {
+    const autorID = req.autor.id;
+    const posts = await Autores.getPostsByAuthorIDFromDB(autorID);
+
+    if (!posts || posts.length === 0) {
+        return res.status(404).json({
+            message: 'Este autor no tiene posts publicados.'
+        });
+    }
+
+    req.posts = posts;
+    next();
+};
+
 module.exports = {
     checkAutoresID,
-    validateAuthorBody
+    validateAuthorBody,
+    checkAuthorHasPosts
 }

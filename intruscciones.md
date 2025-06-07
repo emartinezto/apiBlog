@@ -26,6 +26,14 @@
         > Response: Un objeto con la informacion del autor
 
     - GET > /api/autores/:id/posts → Obtener todos los posts escritos por ese autor
+        > metodo: GET
+        > URL:  /api/autores/<id>/posts
+            * Hay que validar que el id sea un numero - middelware
+            * Hay que validar si el autor tienes post escritos - middelware
+        > Headers: XXXX
+        > body: XXXX
+        > Response: Un objeto con todos los post del autor
+        > Error Response: 404 + Mensaje
 
 📁 Posts (/api/post)
     - GET > /api/post → Listar todos los posts con los datos del autor incluidos (JOIN)

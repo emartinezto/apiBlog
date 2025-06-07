@@ -3,7 +3,7 @@
 GET {{host}}/api/autores
 
 ###
-GET {{host}}/api/autores/erdf
+GET {{host}}/api/autores/3
 
 ###
 POST {{host}}/api/autores/
@@ -14,3 +14,6 @@ Content-Type: application/json
     "email": "jmartinez2@gmail.com",
     "img": "jmartinez2.jpg"
 }
+
+###
+GET {{host}}/api/autores/6/posts

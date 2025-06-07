@@ -16,9 +16,14 @@ const createAutor = async (req, res) => {
     res.json(newAutor);
 }
 
+const getPostsByAuthorID = async (req, res) => {
+    res.json(req.posts);
+}
+
 
 module.exports = { 
     getAll, 
     getByID, 
-    createAutor 
+    createAutor,
+    getPostsByAuthorID 
 }
