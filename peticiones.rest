@@ -10,7 +10,7 @@ POST {{host}}/api/autores/
 Content-Type: application/json
 
 {
-    "nombre": "Hector",
-    "email": "hector@gmail.com",
-    "img": "hector.jpg"
+    "nombre": "Jesus2",
+    "email": "jmartinez2@gmail.com",
+    "img": "jmartinez2.jpg"
 }

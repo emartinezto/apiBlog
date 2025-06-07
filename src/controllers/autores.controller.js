@@ -7,10 +7,6 @@ const getAll = async (req, res) => {
 }
 
 const getByID = async (req, res) => {
-    console.log(req.autor);
-    // const { autorID } = req.params;
-    // const autorByID = await Autores.selectByID(autorID);
-    // if(!autorByID) return res.status(404).json({message: 'El ID del restaurante no existe'});
     res.json(req.autor);
 }
 

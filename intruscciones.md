@@ -17,7 +17,7 @@
         > Response: El objeto del nuevo autor creado.
         > Error Response: 404 + Mensaje
 
-    - POST > /api/autores → Crear un autor nuevo
+    - POST > /api/autores → Crear un autor nuevo > ok
         > metodo: POST
         > URL:  /api/autores
             * Hay que validar que los campos que vengan en el body esten todos y sean correctos

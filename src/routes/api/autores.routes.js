@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const { getAll, getByID, createAutor } = require('../../controllers/autores.controller');
 
-const {checkAutoresID} = require('../../middlewares/autores.middlewares');
+const {checkAutoresID, validateAuthorBody} = require('../../middlewares/autores.middlewares');
 
 // GET de api/autores > Listar todos los autores
 router.get('/', getAll);
@@ -10,6 +10,6 @@ router.get('/', getAll);
 router.get('/:autorID', checkAutoresID, getByID);
 
 // POST de api/autores > Crear un autor
-router.post('/', createAutor)
+router.post('/', validateAuthorBody, createAutor)
 
 module.exports = router;
